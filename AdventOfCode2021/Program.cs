@@ -1,5 +1,5 @@
 ﻿using System;
-using AdventOfCode2021.Days;
+using AdventOfCode2021.Days.Day_1;
 
 namespace AdventOfCode2021
 {
@@ -17,7 +17,7 @@ namespace AdventOfCode2021
                     DayOne.SonarSweep();
                     break;
                 case "1.2":
-                    DayOne.SonarSweepAsSlidingMeasurement();
+                    DayOne.SimplerApproach();
                     break;
             }
         }
