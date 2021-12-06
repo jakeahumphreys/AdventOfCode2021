@@ -13,8 +13,11 @@ namespace AdventOfCode2021
 
             switch (input)
             {
-                case "1":
+                case "1.1":
                     DayOne.SonarSweep();
+                    break;
+                case "1.2":
+                    DayOne.SonarSweepAsSlidingMeasurement();
                     break;
             }
         }
