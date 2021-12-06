@@ -32,14 +32,18 @@ namespace AdventOfCode2021.Days
             MethodTimer.StartTimer();
             int largerMeasurements = 0;
             var depthRecordings = File.ReadLines($"{AppDomain.CurrentDomain.BaseDirectory}..\\..\\..\\Days\\Day 1\\depthRecordings.txt").ToList().ConvertAll(int.Parse);
-
-            var items = depthRecordings.Select((item, index) => new
-            {
-                Item = item,
-                PrevItem = index > 0 ? depthRecordings[index - 1] : 0,
-                NextItem = index < depthRecordings.Count - 1 ? depthRecordings[index + 1] : 0
-            }).ToList();
             
+            var items = new List<DepthGroup>();
+            for (var i = 0; i < depthRecordings.Count; i++)
+            {
+                items.Add(new DepthGroup
+                {
+                    Item = depthRecordings[i],
+                    PrevItem = i > 0 ? depthRecordings[i - 1] : 0,
+                    NextItem = i < depthRecordings.Count - 1 ? depthRecordings[i + 1] : 0
+                });
+            }
+
             items.RemoveAt(0);
             items.RemoveAt(items.Count -1);
 
@@ -60,6 +64,13 @@ namespace AdventOfCode2021.Days
             
             Console.WriteLine(largerMeasurements);
             Console.WriteLine(MethodTimer.StopTimerAndFetchResults());
+        }
+
+        private class DepthGroup
+        {
+            public int Item { get; set; }
+            public int PrevItem { get; set; }
+            public int NextItem { get; set; }
         }
     }
 }
