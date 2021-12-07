@@ -21,7 +21,10 @@ namespace AdventOfCode2021
                     DayOne.SimplerApproach();
                     break;
                 case "2.1":
-                    DayTwo.Dive();
+                    DayTwo.DayTwoPartOne();
+                    break;
+                case "2.2":
+                    DayTwo.DayTwoPartTwo();
                     break;
             }
         }

@@ -7,7 +7,7 @@ namespace AdventOfCode2021.Days.Day_2
 {
     public class DayTwo
     {
-        public static void Dive()
+        public static void DayTwoPartOne()
         {
             MethodTimer.StartTimer();
             var instructions = File.ReadLines($"{AppDomain.CurrentDomain.BaseDirectory}..\\..\\..\\Days\\Day 2\\instructions.txt").ToList();
@@ -30,6 +30,39 @@ namespace AdventOfCode2021.Days.Day_2
 
                 if (direction == "forward")
                     horizontalPosition += amount;
+            }
+
+            Console.WriteLine(horizontalPosition * depth);
+            Console.WriteLine(MethodTimer.StopTimerAndFetchResults());
+        }
+
+        public static void DayTwoPartTwo()
+        {
+            MethodTimer.StartTimer();
+            var instructions = File.ReadLines($"{AppDomain.CurrentDomain.BaseDirectory}..\\..\\..\\Days\\Day 2\\instructions.txt").ToList();
+
+            var depth = 0;
+            var horizontalPosition = 0;
+            var aim = 0;
+
+            foreach (var instruction in instructions)
+            {
+                var instructionBreakdown = instruction.Split(" ");
+
+                var direction = instructionBreakdown[0];
+                var amount = int.Parse(instructionBreakdown[1]);
+
+                if (direction == "up")
+                    aim -= amount;
+
+                if (direction == "down")
+                    aim += amount;
+
+                if (direction == "forward")
+                {
+                    horizontalPosition += amount;
+                    depth += aim * amount;
+                }
             }
 
             Console.WriteLine(horizontalPosition * depth);
