@@ -1,6 +1,7 @@
 ﻿using System;
 using AdventOfCode2021.Days.Day_1;
 using AdventOfCode2021.Days.Day_2;
+using AdventOfCode2021.Days.Day_3;
 
 namespace AdventOfCode2021
 {
@@ -25,6 +26,9 @@ namespace AdventOfCode2021
                     break;
                 case "2.2":
                     DayTwo.DayTwoPartTwo();
+                    break;
+                case "3.1":
+                    DayThree.DayThreePartOne();
                     break;
             }
         }

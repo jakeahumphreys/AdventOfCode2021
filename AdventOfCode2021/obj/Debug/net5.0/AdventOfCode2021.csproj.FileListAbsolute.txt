@@ -14,3 +14,5 @@ C:\Users\Jake\RiderProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\net5.0\A
 C:\Users\Jake\RiderProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\net5.0\ref\AdventOfCode2021.dll
 C:\Users\Jake\RiderProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\net5.0\AdventOfCode2021.pdb
 C:\Users\Jake\RiderProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\net5.0\AdventOfCode2021.genruntimeconfig.cache
+C:\Users\Jake\RiderProjects\AdventOfCode2021\AdventOfCode2021\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Jake\RiderProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\net5.0\AdventOfCode2021.csproj.CopyComplete

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FgKgSiIHMrV6KOms7nRv0Jzi1KGFbO5IssTG+O4hDeIhlJKxi8cQO2wDDOewRPLmhcZU5wuMZDlWWiIPJX5XPQ==",
+  "dgSpecHash": "o4c+bJWZvXU5mT6otdWIYcUHq3ItkeZRGSmzvqPMfghUNL3YU0KwC76jJTbHEpOCbqY5w5EaN0o390kYf9xQxw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jake\\RiderProjects\\AdventOfCode2021\\AdventOfCode2021\\AdventOfCode2021.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Jake\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
